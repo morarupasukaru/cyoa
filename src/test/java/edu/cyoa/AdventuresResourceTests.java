@@ -65,7 +65,7 @@ class AdventuresResourceTests {
             .andExpect(status().isOk())
             .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
                 .andExpect(header().string("Content-Disposition", "attachment; filename=adventure.bas"))
-                .andExpect(content().string("10 REM CREATE YOUR OWN ADVENTURE\n"
+                .andExpect(content().string("10 REM CHOOSE YOUR OWN ADVENTURE\n"
                     + "20 PRINT CHR$(147)\n"
                     + "30 GOTO 100\n"
                     + "100 PRINT \"Start location\"\n"
@@ -81,7 +81,7 @@ class AdventuresResourceTests {
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
                 .andExpect(header().string("Content-Disposition", "attachment; filename=adventure.bas"))
-                .andExpect(content().string(org.hamcrest.Matchers.containsString("10 REM CREATE YOUR OWN ADVENTURE")));
+                .andExpect(content().string(org.hamcrest.Matchers.containsString("10 REM CHOOSE YOUR OWN ADVENTURE")));
     }
 
     @Test

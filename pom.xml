@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.cyoa</groupId>
-	<artifactId>create-your-own-adventure</artifactId>
+	<artifactId>choose-your-own-adventure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name />
 	<description />

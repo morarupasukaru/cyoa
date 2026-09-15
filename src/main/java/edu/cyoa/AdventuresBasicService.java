@@ -20,7 +20,7 @@ public class AdventuresBasicService {
         StringBuilder basic = new StringBuilder();
         int lineNumber = 10;
 
-        appendLine(basic, lineNumber, "REM CREATE YOUR OWN ADVENTURE");
+        appendLine(basic, lineNumber, "REM CHOOSE YOUR OWN ADVENTURE");
         appendLine(basic, lineNumber += 10, "PRINT CHR$(147)");
         appendLine(basic, lineNumber += 10, "GOTO " + lineNumbers.get(adventure.getStartLocationId()));
 

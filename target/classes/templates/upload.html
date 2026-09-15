@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload of Your Own Adventure</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="page-shell upload-page">
+    <header>
+        <p class="eyebrow">Create your own adventure</p>
+    </header>
+
+    <form id="form" method="POST" action="/upload" enctype="multipart/form-data">
+        <div>
+            <label for="file">Choose an adventure file</label>
+            <p class="helper">Upload a JSON file to begin playing.</p>
+        </div>
+        <input type="file" name="file" id="file" accept="application/json" />
+        <input type="submit" value="Start adventure" disabled />
+    </form>
+
+    <p class="guide-link">
+        <a class="secondary-link" href="/how-to-write-cyoa.html">How to write a CYOA JSON</a>
+    </p>
+
+    <script>
+        const fileInput = document.getElementById('file');
+        const submitButton = document.querySelector('input[type="submit"]');
+
+        fileInput.addEventListener('change', () => {
+            submitButton.disabled = fileInput.files.length === 0;
+        });
+    </script>
+</body>
+</html>

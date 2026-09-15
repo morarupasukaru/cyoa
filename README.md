@@ -41,7 +41,7 @@ Alternatively, build the packaged jar and run it:
 
 ```bash
 ./mvnw clean package
-java -jar target/create-your-own-adventure-0.0.1-SNAPSHOT.jar
+java -jar target/choose-your-own-adventure-0.0.1-SNAPSHOT.jar
 ```
 
 Once the application starts, open [http://localhost:8080/](http://localhost:8080/)
