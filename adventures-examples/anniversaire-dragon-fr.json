@@ -1,0 +1,131 @@
+{
+    "id": "anniversaire-dragon-fr",
+    "description": "Aide un petit dragon à trouver une surprise d'anniversaire.",
+    "startLocationId": "village",
+    "locations": [
+        {
+            "id": "village",
+            "text": "Milo le dragon est triste. C'est son anniversaire.",
+            "options": [
+                {
+                    "text": "Visiter le jardin fleuri",
+                    "locationId": "jardin"
+                },
+                {
+                    "text": "Suivre le chemin bleu",
+                    "locationId": "etang"
+                }
+            ]
+        },
+        {
+            "id": "jardin",
+            "text": "Les fleurs bougent. Un cerf-volant rouge vole dans le ciel.",
+            "options": [
+                {
+                    "text": "Monter la petite colline",
+                    "locationId": "colline"
+                },
+                {
+                    "text": "Regarder sous le grand arbre",
+                    "locationId": "arbre"
+                }
+            ]
+        },
+        {
+            "id": "etang",
+            "text": "L'étang brille comme un miroir. Une grenouille dit bonjour.",
+            "options": [
+                {
+                    "text": "Traverser le petit pont",
+                    "locationId": "pont"
+                },
+                {
+                    "text": "Marcher vers la prairie verte",
+                    "locationId": "prairie"
+                }
+            ]
+        },
+        {
+            "id": "colline",
+            "text": "Tu vois un nuage blanc en forme de gâteau.",
+            "options": [
+                {
+                    "text": "Suivre le nuage",
+                    "locationId": "nuage"
+                }
+            ]
+        },
+        {
+            "id": "arbre",
+            "text": "Une toute petite porte est sous l'arbre.",
+            "options": [
+                {
+                    "text": "Ouvrir la petite porte",
+                    "locationId": "grotte"
+                }
+            ]
+        },
+        {
+            "id": "pont",
+            "text": "Le pont chante quand tu le traverses.",
+            "options": [
+                {
+                    "text": "Marcher vers le grand château",
+                    "locationId": "chateau"
+                }
+            ]
+        },
+        {
+            "id": "prairie",
+            "text": "Des papillons dansent dans l'herbe.",
+            "options": [
+                {
+                    "text": "Retourner au jardin",
+                    "locationId": "jardin"
+                }
+            ]
+        },
+        {
+            "id": "nuage",
+            "text": "Le nuage laisse tomber une clé dorée.",
+            "options": [
+                {
+                    "text": "Porter la clé au château",
+                    "locationId": "chateau"
+                }
+            ]
+        },
+        {
+            "id": "grotte",
+            "text": "La grotte est sombre. Une chauve-souris montre le chemin.",
+            "options": [
+                {
+                    "text": "Suivre la chauve-souris vers le château",
+                    "locationId": "chateau"
+                }
+            ]
+        },
+        {
+            "id": "chateau",
+            "text": "Les portes du château s'ouvrent. Les amis de Milo applaudissent.",
+            "options": [
+                {
+                    "text": "Entrer dans la fête",
+                    "locationId": "fete"
+                },
+                {
+                    "text": "Rentrer chez soi avec la clé",
+                    "locationId": "maison"
+                }
+            ]
+        },
+        {
+            "id": "fete",
+            "text": "Surprise ! Milo reçoit un gâteau et un cerf-volant rouge. Fin."
+        },
+        {
+            "id": "maison",
+            "text": "Milo pose la clé près de son lit. Il est heureux. Fin."
+        }
+    ]
+}

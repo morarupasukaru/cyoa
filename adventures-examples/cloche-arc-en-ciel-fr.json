@@ -1,0 +1,263 @@
+{
+    "id": "cloche-arc-en-ciel-fr",
+    "description": "Aide Lina à trouver la cloche arc-en-ciel pour la fête du village.",
+    "startLocationId": "porte-village",
+    "locations": [
+        {
+            "id": "porte-village",
+            "text": "Lina entend une petite cloche. La fête du village commence aujourd'hui.",
+            "options": [
+                {
+                    "text": "Visiter le jardin fleuri",
+                    "locationId": "jardin-fleuri"
+                },
+                {
+                    "text": "Passer la vieille porte",
+                    "locationId": "vieille-porte"
+                }
+            ]
+        },
+        {
+            "id": "jardin-fleuri",
+            "text": "Les fleurs brillantes dansent dans le vent.",
+            "options": [
+                {
+                    "text": "Marcher vers l'étang",
+                    "locationId": "etang-bleu"
+                },
+                {
+                    "text": "Entrer dans la forêt sombre",
+                    "locationId": "foret-sombre"
+                }
+            ]
+        },
+        {
+            "id": "vieille-porte",
+            "text": "La vieille porte grince. Un chemin jaune commence ici.",
+            "options": [
+                {
+                    "text": "Suivre le chemin jaune",
+                    "locationId": "chemin-jaune"
+                }
+            ]
+        },
+        {
+            "id": "etang-bleu",
+            "text": "Une grenouille verte est sur une feuille.",
+            "options": [
+                {
+                    "text": "Traverser le pont de pierre",
+                    "locationId": "pont-pierre"
+                },
+                {
+                    "text": "Jouer dans la prairie",
+                    "locationId": "prairie-soleil"
+                }
+            ]
+        },
+        {
+            "id": "foret-sombre",
+            "text": "La forêt est calme. De petites lumières brillent dans les arbres.",
+            "options": [
+                {
+                    "text": "Monter dans la cabane",
+                    "locationId": "cabane-arbre"
+                },
+                {
+                    "text": "Visiter la grotte amie",
+                    "locationId": "grotte-amie"
+                }
+            ]
+        },
+        {
+            "id": "chemin-jaune",
+            "text": "Le chemin est chaud. Des papillons suivent Lina.",
+            "options": [
+                {
+                    "text": "Traverser le pont de pierre",
+                    "locationId": "pont-pierre"
+                },
+                {
+                    "text": "Monter la petite colline",
+                    "locationId": "petite-colline"
+                }
+            ]
+        },
+        {
+            "id": "pont-pierre",
+            "text": "Le pont chante une chanson joyeuse.",
+            "options": [
+                {
+                    "text": "Aller à la plage",
+                    "locationId": "plage-sable"
+                }
+            ]
+        },
+        {
+            "id": "prairie-soleil",
+            "text": "Un cerf-volant vole haut dans l'herbe.",
+            "options": [
+                {
+                    "text": "Monter la petite colline",
+                    "locationId": "petite-colline"
+                }
+            ]
+        },
+        {
+            "id": "petite-colline",
+            "text": "Depuis la colline, Lina voit un château dans les nuages.",
+            "options": [
+                {
+                    "text": "Suivre le chateau de nuages",
+                    "locationId": "chateau-nuage"
+                }
+            ]
+        },
+        {
+            "id": "chateau-nuage",
+            "text": "Un pont doux traverse le ciel.",
+            "options": [
+                {
+                    "text": "Marcher sur le pont du ciel",
+                    "locationId": "pont-ciel"
+                }
+            ]
+        },
+        {
+            "id": "pont-ciel",
+            "text": "Lina marche au-dessus des nuages. Le ciel est bleu.",
+            "options": [
+                {
+                    "text": "Suivre l'arc-en-ciel",
+                    "locationId": "bout-arc-en-ciel"
+                }
+            ]
+        },
+        {
+            "id": "cabane-arbre",
+            "text": "Un écureuil habite dans la cabane.",
+            "options": [
+                {
+                    "text": "Prendre le chemin du village",
+                    "locationId": "vieux-village"
+                }
+            ]
+        },
+        {
+            "id": "grotte-amie",
+            "text": "Un gentil ours garde un cristal brillant.",
+            "options": [
+                {
+                    "text": "Demander le cristal",
+                    "locationId": "cristal-brillant"
+                }
+            ]
+        },
+        {
+            "id": "cristal-brillant",
+            "text": "Le cristal éclaire la grotte. Il montre la mer.",
+            "options": [
+                {
+                    "text": "Suivre la lumière vers l'île",
+                    "locationId": "petite-ile"
+                }
+            ]
+        },
+        {
+            "id": "plage-sable",
+            "text": "Les vagues brillent. Un petit bateau attend.",
+            "options": [
+                {
+                    "text": "Naviguer vers l'île",
+                    "locationId": "petite-ile"
+                }
+            ]
+        },
+        {
+            "id": "bout-arc-en-ciel",
+            "text": "L'arc-en-ciel finit sur une petite île.",
+            "options": [
+                {
+                    "text": "Entrer sur l'île",
+                    "locationId": "petite-ile"
+                }
+            ]
+        },
+        {
+            "id": "petite-ile",
+            "text": "Des oiseaux colorés chantent sur l'île.",
+            "options": [
+                {
+                    "text": "Visiter le grand phare",
+                    "locationId": "grand-phare"
+                }
+            ]
+        },
+        {
+            "id": "grand-phare",
+            "text": "En haut, Lina trouve la cloche arc-en-ciel.",
+            "options": [
+                {
+                    "text": "Rapporter la cloche au village",
+                    "locationId": "vieux-village"
+                }
+            ]
+        },
+        {
+            "id": "vieux-village",
+            "text": "Le village est plein de lumières et de musique.",
+            "options": [
+                {
+                    "text": "Visiter la boulangerie",
+                    "locationId": "petite-boulangerie"
+                },
+                {
+                    "text": "Aller sur la place",
+                    "locationId": "place-village"
+                }
+            ]
+        },
+        {
+            "id": "petite-boulangerie",
+            "text": "Le boulanger donne un petit pain chaud a Lina.",
+            "options": [
+                {
+                    "text": "Porter le pain sur la place",
+                    "locationId": "place-village"
+                }
+            ]
+        },
+        {
+            "id": "place-village",
+            "text": "Les amis se retrouvent sur la place.",
+            "options": [
+                {
+                    "text": "Commencer la fête",
+                    "locationId": "fete-village"
+                }
+            ]
+        },
+        {
+            "id": "fete-village",
+            "text": "La cloche sonne. Tout le monde danse.",
+            "options": [
+                {
+                    "text": "Regarder les feux d'artifice",
+                    "locationId": "feux-artifice"
+                },
+                {
+                    "text": "Partager le pain à la maison",
+                    "locationId": "maison-heureuse"
+                }
+            ]
+        },
+        {
+            "id": "feux-artifice",
+            "text": "Des étoiles rouges, bleues et dorées remplissent le ciel. Fin."
+        },
+        {
+            "id": "maison-heureuse",
+            "text": "Lina sourit. Tout le village a bien joué. Fin."
+        }
+    ]
+}

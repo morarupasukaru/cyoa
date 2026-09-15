@@ -1,0 +1,263 @@
+{
+    "id": "rainbow-bell-adventure",
+    "description": "Help Lina find the rainbow bell for the village festival.",
+    "startLocationId": "village-gate",
+    "locations": [
+        {
+            "id": "village-gate",
+            "text": "Lina hears a tiny bell. The village festival starts today.",
+            "options": [
+                {
+                    "text": "Visit the flower garden",
+                    "locationId": "flower-garden"
+                },
+                {
+                    "text": "Go through the old gate",
+                    "locationId": "old-gate"
+                }
+            ]
+        },
+        {
+            "id": "flower-garden",
+            "text": "Bright flowers dance in the wind.",
+            "options": [
+                {
+                    "text": "Walk to the pond",
+                    "locationId": "blue-pond"
+                },
+                {
+                    "text": "Enter the dark woods",
+                    "locationId": "dark-woods"
+                }
+            ]
+        },
+        {
+            "id": "old-gate",
+            "text": "The old gate creaks. A yellow path starts here.",
+            "options": [
+                {
+                    "text": "Follow the yellow path",
+                    "locationId": "yellow-path"
+                }
+            ]
+        },
+        {
+            "id": "blue-pond",
+            "text": "A green frog sits on a lily pad.",
+            "options": [
+                {
+                    "text": "Cross the stone bridge",
+                    "locationId": "stone-bridge"
+                },
+                {
+                    "text": "Play in the sunny meadow",
+                    "locationId": "sunny-meadow"
+                }
+            ]
+        },
+        {
+            "id": "dark-woods",
+            "text": "The woods are quiet. Little lights glow on the trees.",
+            "options": [
+                {
+                    "text": "Climb the tree house",
+                    "locationId": "tree-house"
+                },
+                {
+                    "text": "Visit the friendly cave",
+                    "locationId": "friendly-cave"
+                }
+            ]
+        },
+        {
+            "id": "yellow-path",
+            "text": "The path is warm. Butterflies follow Lina.",
+            "options": [
+                {
+                    "text": "Cross the stone bridge",
+                    "locationId": "stone-bridge"
+                },
+                {
+                    "text": "Climb the small hill",
+                    "locationId": "small-hill"
+                }
+            ]
+        },
+        {
+            "id": "stone-bridge",
+            "text": "The bridge hums a happy song.",
+            "options": [
+                {
+                    "text": "Go to the sandy beach",
+                    "locationId": "sandy-beach"
+                }
+            ]
+        },
+        {
+            "id": "sunny-meadow",
+            "text": "A kite flies high above the grass.",
+            "options": [
+                {
+                    "text": "Climb the small hill",
+                    "locationId": "small-hill"
+                }
+            ]
+        },
+        {
+            "id": "small-hill",
+            "text": "From the hill, Lina sees a cloud castle.",
+            "options": [
+                {
+                    "text": "Follow the cloud castle",
+                    "locationId": "cloud-castle"
+                }
+            ]
+        },
+        {
+            "id": "cloud-castle",
+            "text": "A soft cloud makes a fluffy bridge in the sky.",
+            "options": [
+                {
+                    "text": "Walk across the sky bridge",
+                    "locationId": "sky-bridge"
+                }
+            ]
+        },
+        {
+            "id": "sky-bridge",
+            "text": "Lina walks above the clouds. The sky is blue.",
+            "options": [
+                {
+                    "text": "Follow the rainbow",
+                    "locationId": "rainbow-end"
+                }
+            ]
+        },
+        {
+            "id": "tree-house",
+            "text": "A squirrel lives in the tree house.",
+            "options": [
+                {
+                    "text": "Take the path to the village",
+                    "locationId": "old-village"
+                }
+            ]
+        },
+        {
+            "id": "friendly-cave",
+            "text": "A gentle bear guards a shining crystal.",
+            "options": [
+                {
+                    "text": "Ask for the crystal",
+                    "locationId": "shining-crystal"
+                }
+            ]
+        },
+        {
+            "id": "shining-crystal",
+            "text": "The crystal lights the cave. It points to the sea.",
+            "options": [
+                {
+                    "text": "Follow the light to the island",
+                    "locationId": "little-island"
+                }
+            ]
+        },
+        {
+            "id": "sandy-beach",
+            "text": "The waves sparkle. A small boat waits.",
+            "options": [
+                {
+                    "text": "Sail the small boat",
+                    "locationId": "little-island"
+                }
+            ]
+        },
+        {
+            "id": "rainbow-end",
+            "text": "The rainbow ends at a small island.",
+            "options": [
+                {
+                    "text": "Step onto the island",
+                    "locationId": "little-island"
+                }
+            ]
+        },
+        {
+            "id": "little-island",
+            "text": "Colorful birds sing on the island.",
+            "options": [
+                {
+                    "text": "Visit the tall lighthouse",
+                    "locationId": "tall-lighthouse"
+                }
+            ]
+        },
+        {
+            "id": "tall-lighthouse",
+            "text": "At the top, Lina finds the rainbow bell.",
+            "options": [
+                {
+                    "text": "Bring the bell to the village",
+                    "locationId": "old-village"
+                }
+            ]
+        },
+        {
+            "id": "old-village",
+            "text": "The village is full of lights and music.",
+            "options": [
+                {
+                    "text": "Visit the little bakery",
+                    "locationId": "little-bakery"
+                },
+                {
+                    "text": "Go to the village square",
+                    "locationId": "village-square"
+                }
+            ]
+        },
+        {
+            "id": "little-bakery",
+            "text": "The baker gives Lina a warm bun.",
+            "options": [
+                {
+                    "text": "Take the bun to the square",
+                    "locationId": "village-square"
+                }
+            ]
+        },
+        {
+            "id": "village-square",
+            "text": "Friends gather in the square.",
+            "options": [
+                {
+                    "text": "Start the festival",
+                    "locationId": "village-festival"
+                }
+            ]
+        },
+        {
+            "id": "village-festival",
+            "text": "The rainbow bell rings. Everyone dances.",
+            "options": [
+                {
+                    "text": "Watch the bright fireworks",
+                    "locationId": "bright-fireworks"
+                },
+                {
+                    "text": "Share the warm bun at home",
+                    "locationId": "happy-home"
+                }
+            ]
+        },
+        {
+            "id": "bright-fireworks",
+            "text": "Red, blue, and gold stars fill the sky. The End."
+        },
+        {
+            "id": "happy-home",
+            "text": "Lina smiles. The whole village had fun. The End."
+        }
+    ]
+}

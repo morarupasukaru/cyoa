@@ -1,0 +1,131 @@
+{
+    "id": "little-dragon-birthday",
+    "description": "Help a little dragon find a birthday surprise.",
+    "startLocationId": "village",
+    "locations": [
+        {
+            "id": "village",
+            "text": "Milo the dragon is sad. It is his birthday.",
+            "options": [
+                {
+                    "text": "Visit the sunny garden",
+                    "locationId": "garden"
+                },
+                {
+                    "text": "Follow the blue path",
+                    "locationId": "pond"
+                }
+            ]
+        },
+        {
+            "id": "garden",
+            "text": "The flowers wave. A red kite flies above you.",
+            "options": [
+                {
+                    "text": "Climb the small hill",
+                    "locationId": "hill"
+                },
+                {
+                    "text": "Look under the big tree",
+                    "locationId": "tree"
+                }
+            ]
+        },
+        {
+            "id": "pond",
+            "text": "The pond shines like a mirror. A frog says hello.",
+            "options": [
+                {
+                    "text": "Cross the little bridge",
+                    "locationId": "bridge"
+                },
+                {
+                    "text": "Walk to the green meadow",
+                    "locationId": "meadow"
+                }
+            ]
+        },
+        {
+            "id": "hill",
+            "text": "You see a white cloud shaped like a cake.",
+            "options": [
+                {
+                    "text": "Follow the cloud",
+                    "locationId": "cloud"
+                }
+            ]
+        },
+        {
+            "id": "tree",
+            "text": "A tiny door is under the tree.",
+            "options": [
+                {
+                    "text": "Open the tiny door",
+                    "locationId": "cave"
+                }
+            ]
+        },
+        {
+            "id": "bridge",
+            "text": "The bridge sings as you cross it.",
+            "options": [
+                {
+                    "text": "Walk to the tall castle",
+                    "locationId": "castle"
+                }
+            ]
+        },
+        {
+            "id": "meadow",
+            "text": "Butterflies dance in the grass.",
+            "options": [
+                {
+                    "text": "Return to the garden",
+                    "locationId": "garden"
+                }
+            ]
+        },
+        {
+            "id": "cloud",
+            "text": "The cloud drops a golden key.",
+            "options": [
+                {
+                    "text": "Take the key to the castle",
+                    "locationId": "castle"
+                }
+            ]
+        },
+        {
+            "id": "cave",
+            "text": "The cave is dark. A friendly bat shows the way.",
+            "options": [
+                {
+                    "text": "Follow the bat to the castle",
+                    "locationId": "castle"
+                }
+            ]
+        },
+        {
+            "id": "castle",
+            "text": "The castle doors open. Milo's friends cheer.",
+            "options": [
+                {
+                    "text": "Enter the birthday party",
+                    "locationId": "party"
+                },
+                {
+                    "text": "Fly home with the key",
+                    "locationId": "home"
+                }
+            ]
+        },
+        {
+            "id": "party",
+            "text": "Surprise! Milo gets a cake and a bright red kite. The End."
+        },
+        {
+            "id": "home",
+            "text": "Milo hangs the key by his bed. He feels happy. The End."
+        }
+    ]
+}

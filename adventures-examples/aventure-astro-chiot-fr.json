@@ -1,0 +1,221 @@
+{
+    "id": "aventure-astro-chiot-fr",
+    "description": "Aide Astro le chiot à rejoindre la grande fête des étoiles.",
+    "startLocationId": "port-espace",
+    "locations": [
+        {
+            "id": "port-espace",
+            "text": "Astro le chiot a perdu sa carte des étoiles. La fête commence bientôt.",
+            "options": [
+                {
+                    "text": "Prendre la fusée rouge",
+                    "locationId": "fusee-rouge"
+                },
+                {
+                    "text": "Demander au gentil robot",
+                    "locationId": "gentil-robot"
+                }
+            ]
+        },
+        {
+            "id": "fusee-rouge",
+            "text": "La fusée rouge brille. Trois boutons clignotent.",
+            "options": [
+                {
+                    "text": "Voler vers la lune bleue",
+                    "locationId": "lune-bleue"
+                },
+                {
+                    "text": "Voler vers la planète rouge",
+                    "locationId": "planete-rouge"
+                }
+            ]
+        },
+        {
+            "id": "gentil-robot",
+            "text": "Le robot sourit et donne une clé d'argent à Astro.",
+            "options": [
+                {
+                    "text": "Visiter la bibliothèque de l'espace",
+                    "locationId": "bibliotheque-espace"
+                },
+                {
+                    "text": "Suivre la comète brillante",
+                    "locationId": "comete-brillante"
+                }
+            ]
+        },
+        {
+            "id": "lune-bleue",
+            "text": "La lune bleue a une poussière blanche et douce.",
+            "options": [
+                {
+                    "text": "Visiter le jardin de la lune",
+                    "locationId": "jardin-lune"
+                },
+                {
+                    "text": "Traverser le pont des étoiles",
+                    "locationId": "pont-etoiles"
+                }
+            ]
+        },
+        {
+            "id": "planete-rouge",
+            "text": "La planète rouge a deux petits soleils.",
+            "options": [
+                {
+                    "text": "Chercher dans le cratère rouge",
+                    "locationId": "cratere-rouge"
+                },
+                {
+                    "text": "Lire un livre de l'espace",
+                    "locationId": "bibliotheque-espace"
+                }
+            ]
+        },
+        {
+            "id": "jardin-lune",
+            "text": "Les fleurs de la lune brillent dans le noir.",
+            "options": [
+                {
+                    "text": "Traverser le pont des étoiles",
+                    "locationId": "pont-etoiles"
+                }
+            ]
+        },
+        {
+            "id": "pont-etoiles",
+            "text": "De petites étoiles éclairent le pont.",
+            "options": [
+                {
+                    "text": "Marcher vers la ville arc-en-ciel",
+                    "locationId": "ville-arc-en-ciel"
+                }
+            ]
+        },
+        {
+            "id": "cratere-rouge",
+            "text": "Un petit drapeau sort du cratère.",
+            "options": [
+                {
+                    "text": "Suivre le drapeau vers le robot",
+                    "locationId": "gentil-robot"
+                }
+            ]
+        },
+        {
+            "id": "bibliotheque-espace",
+            "text": "Les livres flottent dans l'air. Un livre montre le chemin.",
+            "options": [
+                {
+                    "text": "Lire le livre près de la comète",
+                    "locationId": "comete-brillante"
+                }
+            ]
+        },
+        {
+            "id": "comete-brillante",
+            "text": "La comète a une longue queue dorée.",
+            "options": [
+                {
+                    "text": "Aller vers la lune de glace",
+                    "locationId": "lune-glace"
+                }
+            ]
+        },
+        {
+            "id": "lune-glace",
+            "text": "La lune de glace est froide mais brillante.",
+            "options": [
+                {
+                    "text": "Entrer dans la grotte de cristal",
+                    "locationId": "grotte-cristal"
+                }
+            ]
+        },
+        {
+            "id": "grotte-cristal",
+            "text": "Des cristaux bleus brillent sur les murs.",
+            "options": [
+                {
+                    "text": "Suivre la lumière bleue",
+                    "locationId": "jardin-ami"
+                }
+            ]
+        },
+        {
+            "id": "jardin-ami",
+            "text": "Des plantes rigolotes saluent Astro.",
+            "options": [
+                {
+                    "text": "Aller à la ville arc-en-ciel",
+                    "locationId": "ville-arc-en-ciel"
+                }
+            ]
+        },
+        {
+            "id": "ville-arc-en-ciel",
+            "text": "Les tours arc-en-ciel brillent de toutes les couleurs.",
+            "options": [
+                {
+                    "text": "Visiter la place de la musique",
+                    "locationId": "place-musique"
+                }
+            ]
+        },
+        {
+            "id": "place-musique",
+            "text": "Des amis jouent de drôles de chansons.",
+            "options": [
+                {
+                    "text": "Visiter la boutique de gâteaux",
+                    "locationId": "boutique-gateaux"
+                },
+                {
+                    "text": "Aller à la fête des étoiles",
+                    "locationId": "fete-etoiles"
+                }
+            ]
+        },
+        {
+            "id": "boutique-gateaux",
+            "text": "La boutique sent bon. Le boulanger donne une carte.",
+            "options": [
+                {
+                    "text": "Porter la carte à la fête",
+                    "locationId": "fete-etoiles"
+                }
+            ]
+        },
+        {
+            "id": "fete-etoiles",
+            "text": "Astro trouve la fete. Tout le monde applaudit.",
+            "options": [
+                {
+                    "text": "Regarder les feux de l'espace",
+                    "locationId": "feux-espace"
+                },
+                {
+                    "text": "Danser toute la nuit",
+                    "locationId": "maison-heureuse"
+                },
+                {
+                    "text": "Faire une petite sieste",
+                    "locationId": "capsule-dodo"
+                }
+            ]
+        },
+        {
+            "id": "feux-espace",
+            "text": "Des étoiles roses dansent dans le ciel. Astro rit. Fin."
+        },
+        {
+            "id": "maison-heureuse",
+            "text": "Astro danse avec ses amis. Fin."
+        },
+        {
+            "id": "capsule-dodo",
+            "text": "Astro dort sous une couverture douce. Fin."
+        }
+    ]
+}

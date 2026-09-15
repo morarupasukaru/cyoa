@@ -1,0 +1,49 @@
+{
+    "id": "simple-adventure",
+    "description": "A simple adventure with a few choices.",
+    "startLocationId": "start",
+    "locations": [
+        {
+            "id": "start",
+            "text": "You are in a dark room. There is a door to the north and a window to the east.",
+            "options": [
+                {
+                    "text": "Go north",
+                    "locationId": "north-room"
+                },
+                {
+                    "text": "Go east",
+                    "locationId": "east-room"
+                }
+            ]
+        },
+        {
+            "id": "north-room",
+            "text": "You are in a bright room. There is a door to the south.",
+            "options": [
+                {
+                    "text": "Go south",
+                    "locationId": "start"
+                }
+            ]
+        },
+        {
+            "id": "east-room",
+            "text": "You are in a library. There is a door to the west.",
+            "options": [
+                {
+                    "text": "Go west",
+                    "locationId": "start"
+                },
+                {
+                    "text": "Search for a secret passage",
+                    "locationId": "secret-room"
+                }
+            ]
+        },
+        {
+            "id": "secret-room",
+            "text": "You have found a secret room! There is a treasure chest here."
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "id": "astro-puppy-space-adventure",
+    "description": "Help Astro Puppy reach the big star party.",
+    "startLocationId": "space-port",
+    "locations": [
+        {
+            "id": "space-port",
+            "text": "Astro Puppy lost his star map. The space party starts soon.",
+            "options": [
+                {
+                    "text": "Take the red rocket",
+                    "locationId": "red-rocket"
+                },
+                {
+                    "text": "Ask the kind robot",
+                    "locationId": "kind-robot"
+                }
+            ]
+        },
+        {
+            "id": "red-rocket",
+            "text": "The red rocket shines. Three buttons blink.",
+            "options": [
+                {
+                    "text": "Fly to the blue moon",
+                    "locationId": "blue-moon"
+                },
+                {
+                    "text": "Fly to the red planet",
+                    "locationId": "red-planet"
+                }
+            ]
+        },
+        {
+            "id": "kind-robot",
+            "text": "The robot smiles and gives Astro Puppy a silver key.",
+            "options": [
+                {
+                    "text": "Visit the space library",
+                    "locationId": "space-library"
+                },
+                {
+                    "text": "Chase the bright comet",
+                    "locationId": "bright-comet"
+                }
+            ]
+        },
+        {
+            "id": "blue-moon",
+            "text": "The blue moon has soft white dust.",
+            "options": [
+                {
+                    "text": "Visit the moon garden",
+                    "locationId": "moon-garden"
+                },
+                {
+                    "text": "Cross the star bridge",
+                    "locationId": "star-bridge"
+                }
+            ]
+        },
+        {
+            "id": "red-planet",
+            "text": "The red planet has two little suns.",
+            "options": [
+                {
+                    "text": "Search the red crater",
+                    "locationId": "red-crater"
+                },
+                {
+                    "text": "Read a space book",
+                    "locationId": "space-library"
+                }
+            ]
+        },
+        {
+            "id": "moon-garden",
+            "text": "Moon flowers glow in the dark.",
+            "options": [
+                {
+                    "text": "Cross the star bridge",
+                    "locationId": "star-bridge"
+                }
+            ]
+        },
+        {
+            "id": "star-bridge",
+            "text": "Tiny stars light the bridge.",
+            "options": [
+                {
+                    "text": "Walk to rainbow city",
+                    "locationId": "rainbow-city"
+                }
+            ]
+        },
+        {
+            "id": "red-crater",
+            "text": "A small flag sticks out of the crater.",
+            "options": [
+                {
+                    "text": "Follow the flag to the robot",
+                    "locationId": "kind-robot"
+                }
+            ]
+        },
+        {
+            "id": "space-library",
+            "text": "The books float in the air. One book shows the way.",
+            "options": [
+                {
+                    "text": "Read the book near the comet",
+                    "locationId": "bright-comet"
+                }
+            ]
+        },
+        {
+            "id": "bright-comet",
+            "text": "The comet has a long golden tail.",
+            "options": [
+                {
+                    "text": "Ride to the ice moon",
+                    "locationId": "ice-moon"
+                }
+            ]
+        },
+        {
+            "id": "ice-moon",
+            "text": "The ice moon is cold but shiny.",
+            "options": [
+                {
+                    "text": "Enter the crystal cave",
+                    "locationId": "crystal-cave"
+                }
+            ]
+        },
+        {
+            "id": "crystal-cave",
+            "text": "Blue crystals glow on the cave walls.",
+            "options": [
+                {
+                    "text": "Follow the blue glow",
+                    "locationId": "alien-garden"
+                }
+            ]
+        },
+        {
+            "id": "alien-garden",
+            "text": "Funny plants wave at Astro Puppy.",
+            "options": [
+                {
+                    "text": "Go to rainbow city",
+                    "locationId": "rainbow-city"
+                }
+            ]
+        },
+        {
+            "id": "rainbow-city",
+            "text": "Rainbow towers sparkle in every color.",
+            "options": [
+                {
+                    "text": "Visit music square",
+                    "locationId": "music-square"
+                }
+            ]
+        },
+        {
+            "id": "music-square",
+            "text": "Friendly aliens play funny songs.",
+            "options": [
+                {
+                    "text": "Visit the cake shop",
+                    "locationId": "cake-shop"
+                },
+                {
+                    "text": "Go to the star festival",
+                    "locationId": "star-festival"
+                }
+            ]
+        },
+        {
+            "id": "cake-shop",
+            "text": "The cake shop smells sweet. The baker gives a map.",
+            "options": [
+                {
+                    "text": "Take the map to the festival",
+                    "locationId": "star-festival"
+                }
+            ]
+        },
+        {
+            "id": "star-festival",
+            "text": "Astro Puppy finds the party. Everyone cheers.",
+            "options": [
+                {
+                    "text": "Watch the space fireworks",
+                    "locationId": "space-fireworks"
+                },
+                {
+                    "text": "Dance all night",
+                    "locationId": "happy-home"
+                },
+                {
+                    "text": "Take a quiet nap",
+                    "locationId": "sleepy-pod"
+                }
+            ]
+        },
+        {
+            "id": "space-fireworks",
+            "text": "Pink stars pop in the sky. Astro Puppy laughs. The End."
+        },
+        {
+            "id": "happy-home",
+            "text": "Astro Puppy dances with his friends. The End."
+        },
+        {
+            "id": "sleepy-pod",
+            "text": "Astro Puppy sleeps under a soft star blanket. The End."
+        }
+    ]
+}
