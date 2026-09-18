@@ -57,9 +57,23 @@ public class AdventuresBasicService {
         int lineNumber = 100;
         for (Location location : adventure.getLocations()) {
             lineNumbers.put(location.getId(), lineNumber);
-            lineNumber += 100;
+            lineNumber += locationLineCount(location) * 10;
         }
         return lineNumbers;
+    }
+
+    private int locationLineCount(Location location) {
+        int lineCount = 1 + printLineCount(location.getText());
+        List<Option> options = location.getOptions();
+        if (options == null || options.isEmpty()) {
+            return lineCount + 2;
+        }
+
+        lineCount++;
+        for (int index = 0; index < options.size(); index++) {
+            lineCount += printLineCount((index + 1) + ". " + options.get(index).getText());
+        }
+        return lineCount + 2 + options.size();
     }
 
     private void appendLine(StringBuilder basic, int lineNumber, String statement) {
@@ -73,6 +87,10 @@ public class AdventuresBasicService {
             lineNumber += 10;
         }
         return lineNumber - 10;
+    }
+
+    private int printLineCount(String text) {
+        return text.split("\\R", -1).length;
     }
 
     private String escape(String text) {
