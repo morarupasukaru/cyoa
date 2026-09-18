@@ -68,9 +68,10 @@ class AdventuresResourceTests {
                 .andExpect(content().string("10 REM CHOOSE YOUR OWN ADVENTURE\n"
                     + "20 PRINT CHR$(147)\n"
                     + "30 GOTO 100\n"
-                    + "100 PRINT \"Start location\"\n"
-                    + "110 PRINT \"THE END\"\n"
-                    + "120 END\n"));
+                    + "100 PRINT CHR$(147)\n"
+                    + "110 PRINT \"START LOCATION\"\n"
+                    + "120 PRINT \"THE END\"\n"
+                    + "130 END\n"));
         }
 
     @Test
