@@ -70,6 +70,10 @@ h1 {
     text-wrap: balance;
 }
 
+.location-text {
+    white-space: pre-line;
+}
+
 header {
     margin-bottom: 2rem;
 }

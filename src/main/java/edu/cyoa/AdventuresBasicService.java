@@ -27,7 +27,7 @@ public class AdventuresBasicService {
         for (Location location : adventure.getLocations()) {
             lineNumber = lineNumbers.get(location.getId());
             appendLine(basic, lineNumber, "PRINT CHR$(147)");
-            appendLine(basic, lineNumber += 10, "PRINT \"" + escape(location.getText()) + "\"");
+            lineNumber = appendPrintLines(basic, lineNumber + 10, location.getText());
 
             List<Option> options = location.getOptions();
             if (options == null || options.isEmpty()) {
@@ -38,8 +38,8 @@ public class AdventuresBasicService {
 
             appendLine(basic, lineNumber += 10, "PRINT \"\"");
             for (int index = 0; index < options.size(); index++) {
-                appendLine(basic, lineNumber += 10,
-                        "PRINT \"" + (index + 1) + ". " + escape(options.get(index).getText()) + "\"");
+                lineNumber = appendPrintLines(basic, lineNumber + 10,
+                    (index + 1) + ". " + options.get(index).getText());
             }
             appendLine(basic, lineNumber += 10, "INPUT \"CHOICE\";C");
             for (int index = 0; index < options.size(); index++) {
@@ -64,6 +64,15 @@ public class AdventuresBasicService {
 
     private void appendLine(StringBuilder basic, int lineNumber, String statement) {
         basic.append(lineNumber).append(' ').append(statement).append('\n');
+    }
+
+    private int appendPrintLines(StringBuilder basic, int lineNumber, String text) {
+        String[] lines = text.split("\\R", -1);
+        for (String line : lines) {
+            appendLine(basic, lineNumber, "PRINT \"" + escape(line) + "\"");
+            lineNumber += 10;
+        }
+        return lineNumber - 10;
     }
 
     private String escape(String text) {

@@ -97,6 +97,18 @@ class AdventureControllerTests {
     }
 
     @Test
+    void locationTextPreservesNewlines() throws Exception {
+        Adventure adventure = createAdventure();
+        adventure.getLocations().get(0).setText("First line\nSecond line");
+        when(adventureSession.getAdventure()).thenReturn(adventure);
+
+        mockMvc.perform(get("/locations/start"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(org.hamcrest.Matchers.containsString(
+                        "First line\nSecond line")));
+    }
+
+    @Test
     void unknownLocationRedirectsHome() throws Exception {
         when(adventureSession.getAdventure()).thenReturn(createAdventure());
 
