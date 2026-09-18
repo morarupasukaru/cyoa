@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adventure file error</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="page-shell error-page">
+    <header>
+        <p class="eyebrow">Adventure file could not be loaded</p>
+        <h1>Check your adventure</h1>
+    </header>
+
+    <main>
+        <dl class="error-details">
+            <div>
+                <dt>Error code</dt>
+                <dd th:text="${errorCode}">INVALID_ADVENTURE</dd>
+            </div>
+            <div>
+                <dt>Affected location</dt>
+                <dd th:text="${locationId ?: 'Not specified'}">Not specified</dd>
+            </div>
+        </dl>
+        <a class="secondary-link" th:href="@{/}">Upload another adventure</a>
+    </main>
+</body>
+</html>

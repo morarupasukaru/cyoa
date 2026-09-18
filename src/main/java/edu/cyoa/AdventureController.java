@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestClient;
+import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.multipart.MultipartFile;
+
+import tools.jackson.databind.ObjectMapper;
 
 import edu.cyoa.model.Adventure;
 import edu.cyoa.model.Location;
@@ -26,6 +29,9 @@ public class AdventureController {
 
     @Resource
     AdventureSession adventureSession;
+
+    @Resource
+    ObjectMapper objectMapper;
 
     RestClient restClient = RestClient.create();
 
@@ -88,17 +94,30 @@ public class AdventureController {
     }
 
     @PostMapping("/upload")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file, Session session) throws IOException {
+    public String handleFileUpload(@RequestParam("file") MultipartFile file, Session session,
+            Model model) throws IOException {
         String context = file.getResource().getContentAsString(Charset.defaultCharset());
 
-        ResponseEntity<Adventure> adventureResponse = this.restClient.post()
-                .uri("http://localhost:8080/adventures")
-                .body(context)
-                .contentType(MediaType.APPLICATION_JSON)
-                .retrieve()
-                .toEntity(Adventure.class);
+        ResponseEntity<Adventure> adventureResponse;
+        try {
+            adventureResponse = this.restClient.post()
+                    .uri("http://localhost:8080/adventures")
+                    .body(context)
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .retrieve()
+                    .toEntity(Adventure.class);
+        } catch (RestClientResponseException exception) {
+            ValidationError error = objectMapper.readValue(exception.getResponseBodyAsString(),
+                    ValidationError.class);
+            model.addAttribute("errorCode", error.errorCode());
+            model.addAttribute("locationId", error.locationId());
+            return "error";
+        }
         adventureSession.setAdventure(adventureResponse.getBody());
         adventureSession.resetPlay();
         return "redirect:/";
+    }
+
+    private record ValidationError(String errorCode, String locationId) {
     }
 }

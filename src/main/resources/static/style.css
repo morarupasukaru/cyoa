@@ -234,6 +234,33 @@ form {
     font-size: 0.9rem;
 }
 
+.error-details {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+}
+
+.error-details div {
+    padding: 1rem;
+    background: var(--wash);
+    border: 1px solid var(--line);
+    border-radius: 0.35rem;
+}
+
+.error-details dt {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.error-details dd {
+    margin: 0.25rem 0 0;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    overflow-wrap: anywhere;
+}
+
 .options {
     display: grid;
     gap: 0.75rem;
