@@ -73,4 +73,19 @@ public class AdventuresService {
                 ? Optional.empty()
                 : Optional.of("UNREACHABLE_LOCATION");
     }
+
+    public Optional<String> duplicateLocationId(Adventure adventure) {
+        if (adventure == null || adventure.getLocations() == null) {
+            return Optional.empty();
+        }
+
+        Set<String> locationIds = new HashSet<>();
+        for (Location location : adventure.getLocations()) {
+            if (location != null && location.getId() != null
+                    && !locationIds.add(location.getId())) {
+                return Optional.of(location.getId());
+            }
+        }
+        return Optional.empty();
+    }
 }

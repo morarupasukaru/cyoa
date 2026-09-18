@@ -31,7 +31,7 @@ public class AdventuresResource implements edu.cyoa.AdventuresApi {
     public ResponseEntity<Adventure> validateAdventure(@Valid Adventure adventure) {
         adventuresService.validationErrorCode(adventure)
                 .ifPresent(errorCode -> {
-                    throw new InvalidAdventureException(errorCode);
+                    throw invalidAdventureException(errorCode, adventure);
                 });
         return ResponseEntity.ok(adventure);
     }
@@ -53,8 +53,15 @@ public class AdventuresResource implements edu.cyoa.AdventuresApi {
     private void validate(Adventure adventure) {
         adventuresService.validationErrorCode(adventure)
                 .ifPresent(errorCode -> {
-                    throw new InvalidAdventureException(errorCode);
+                    throw invalidAdventureException(errorCode, adventure);
                 });
+    }
+
+    private InvalidAdventureException invalidAdventureException(String errorCode, Adventure adventure) {
+        String locationId = "DUPLICATE_LOCATION_ID".equals(errorCode)
+                ? adventuresService.duplicateLocationId(adventure).orElse(null)
+                : null;
+        return new InvalidAdventureException(errorCode, locationId);
     }
 
     private ResponseEntity<String> basicDownload(Adventure adventure) {
@@ -67,22 +74,28 @@ public class AdventuresResource implements edu.cyoa.AdventuresApi {
     @ExceptionHandler(InvalidAdventureException.class)
     public ResponseEntity<ErrorResponse> handleInvalidAdventure(InvalidAdventureException exception) {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                .body(new ErrorResponse(exception.getErrorCode()));
+                .body(new ErrorResponse(exception.getErrorCode(), exception.getLocationId()));
     }
 
-    public record ErrorResponse(String errorCode) {
+    public record ErrorResponse(String errorCode, String locationId) {
     }
 
     private static class InvalidAdventureException extends RuntimeException {
 
         private final String errorCode;
+        private final String locationId;
 
-        private InvalidAdventureException(String errorCode) {
+        private InvalidAdventureException(String errorCode, String locationId) {
             this.errorCode = errorCode;
+            this.locationId = locationId;
         }
 
         private String getErrorCode() {
             return errorCode;
+        }
+
+        private String getLocationId() {
+            return locationId;
         }
     }
 }

@@ -154,11 +154,14 @@ class AdventuresResourceTests {
         adventure.getLocations().add(new Location("location1", "Duplicate location"));
         when(adventuresService.validationErrorCode(any(Adventure.class)))
             .thenReturn(Optional.of("DUPLICATE_LOCATION_ID"));
+        when(adventuresService.duplicateLocationId(any(Adventure.class)))
+            .thenReturn(Optional.of("location1"));
 
         mockMvc.perform(post("/adventures").contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(adventure)))
             .andExpect(status().isBadRequest())
-            .andExpect(jsonPath("$.errorCode").value("DUPLICATE_LOCATION_ID"));
+            .andExpect(jsonPath("$.errorCode").value("DUPLICATE_LOCATION_ID"))
+            .andExpect(jsonPath("$.locationId").value("location1"));
     }
 
     @Test

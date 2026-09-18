@@ -18,7 +18,7 @@ import jakarta.annotation.Generated;
  * Option
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-15T07:38:44.728466529+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-18T10:14:56.695473452+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
 public class Option {
 
   private String text;

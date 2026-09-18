@@ -18,10 +18,12 @@ import jakarta.annotation.Generated;
  * ErrorResponse
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-15T07:38:44.728466529+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-18T10:14:56.695473452+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
 public class ErrorResponse {
 
   private String errorCode;
+
+  private @Nullable String locationId;
 
   public ErrorResponse() {
     super();
@@ -55,6 +57,27 @@ public class ErrorResponse {
     this.errorCode = errorCode;
   }
 
+  public ErrorResponse locationId(@Nullable String locationId) {
+    this.locationId = locationId;
+    return this;
+  }
+
+  /**
+   * Get locationId
+   * @return locationId
+   */
+  
+  @Schema(name = "locationId", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+  @JsonProperty("locationId")
+  public @Nullable String getLocationId() {
+    return locationId;
+  }
+
+  @JsonProperty("locationId")
+  public void setLocationId(@Nullable String locationId) {
+    this.locationId = locationId;
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -64,12 +87,13 @@ public class ErrorResponse {
       return false;
     }
     ErrorResponse errorResponse = (ErrorResponse) o;
-    return Objects.equals(this.errorCode, errorResponse.errorCode);
+    return Objects.equals(this.errorCode, errorResponse.errorCode) &&
+        Objects.equals(this.locationId, errorResponse.locationId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(errorCode);
+    return Objects.hash(errorCode, locationId);
   }
 
   @Override
@@ -77,6 +101,7 @@ public class ErrorResponse {
     StringBuilder sb = new StringBuilder();
     sb.append("class ErrorResponse {\n");
     sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
+    sb.append("    locationId: ").append(toIndentedString(locationId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

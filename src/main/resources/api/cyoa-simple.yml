@@ -110,5 +110,7 @@ components:
       properties:
         errorCode:
           type: string
+        locationId:
+          $ref: '#/components/schemas/LocationId'
       required:
         - errorCode
