@@ -22,7 +22,7 @@ import jakarta.annotation.Generated;
  * Location
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-18T10:14:56.695473452+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2026-09-18T10:16:12.775669488+02:00[Europe/Zurich]", comments = "Generator version: 7.25.0")
 public class Location {
 
   private String id;
